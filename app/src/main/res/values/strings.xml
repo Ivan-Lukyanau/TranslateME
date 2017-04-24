@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TranslateMe</string>
+    <string name="yandex_translate_link"><a href="http://translate.yandex.ru/">Переведено сервисом «Яндекс.Переводчик</a></string>
+</resources>

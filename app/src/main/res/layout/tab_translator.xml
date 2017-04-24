@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/yandex_link_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+
+
+        android:text="@string/yandex_translate_link"
+        android:visibility="invisible" />
+
+    <FrameLayout
+        android:id="@+id/image_frame"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/coordinator"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/image_thumb"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="100"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
+
+    </FrameLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <EditText
+            android:id="@+id/tr_input"
+            android:maxLength="255"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:ems="10"
+            android:hint="word to translate"
+            android:inputType="textPersonName"
+            android:textColorLink="@color/cyan"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tr_result"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="140dp"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <!--
+            android:text="awesome - потрясающе"
+        -->
+
+        <Button
+            android:id="@+id/tr_send"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="60dp"
+            android:background="@color/mainPurple"
+            android:fontFamily="monospace"
+            android:onClick="translateOnClick"
+            android:text="translate"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</RelativeLayout>

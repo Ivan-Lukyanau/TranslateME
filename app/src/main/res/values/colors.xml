@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303f9f</color>
+    <color name="mainPrimaryDark">#93c</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="mainPurple">#9e45cb</color>
+
+    <color name="sHighlighter">#A660D4</color>
+    <color name="sPrimary">#512DB1</color>
+
+    <color name="cyan">#0adbd0</color>
+
+    <color name="whiteBlue">#0099FF</color>
+    <color name="whitePink">#F4386A</color>
+</resources>
